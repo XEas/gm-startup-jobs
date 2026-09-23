@@ -40,28 +40,17 @@ This README is generated from `data/`. Please don't edit it directly.
 
 ## Open roles
 
-**15 open roles at 1 startup.**
+**4 open roles at 4 startups.**
 
 ### All startups
 
-#### New Grad
+#### Internships
 
 | Company | What they do | Stage | Role | Location | Apply | Age |
 |---|---|---|---|---|---|---|
-| **[Metriport](https://www.metriport.com)**<br><sub>YC S22</sub> | Healthcare data infrastructure for next generation care delivery | — | Account Executive<br><sub>Full-time · Growth/Marketing</sub> | San Francisco, CA | [Apply](https://www.ycombinator.com/companies/metriport/jobs/pKiYGAg-account-executive)<br><sub>Asks for 6+ years of experience; $200K–$275K; SF Bay Area, hybrid</sub> | 0d |
-| ↳ |  |  | Design Engineer<br><sub>Full-time · Design</sub> | San Francisco, CA | [Apply](https://www.ycombinator.com/companies/metriport/jobs/9RLuRon-design-engineer)<br><sub>Asks for 3+ years of experience; $140K–$180K; SF Bay Area, hybrid</sub> | 0d |
-| ↳ |  |  | Head of Customer Success<br><sub>Full-time · Ops/BizOps</sub> | San Francisco, CA | [Apply](https://www.ycombinator.com/companies/metriport/jobs/va3Pgyc-head-of-customer-success)<br><sub>Asks for 6+ years of experience; $190K–$250K; SF Bay Area, hybrid</sub> | 0d |
-| ↳ |  |  | Office Manager/Executive Assistant<br><sub>Full-time · Ops/BizOps</sub> | San Francisco, CA | [Apply](https://www.ycombinator.com/companies/metriport/jobs/CI0gWvW-office-manager-executive-assistant)<br><sub>Asks for 1+ years of experience; $35–$40/hr; SF Bay Area, hybrid</sub> | 0d |
-| ↳ |  |  | Partnerships Lead<br><sub>Full-time · Growth/Marketing</sub> | San Francisco, CA | [Apply](https://www.ycombinator.com/companies/metriport/jobs/FJO2xX7-partnerships-lead)<br><sub>Asks for 3+ years of experience; $140K–$160K; SF Bay Area, hybrid</sub> | 0d |
-| ↳ |  |  | Product Design<br><sub>Full-time · Design</sub> | San Francisco, CA | [Apply](https://www.ycombinator.com/companies/metriport/jobs/wV6tPZ2-product-design)<br><sub>Asks for 3+ years of experience; $140K–$180K; SF Bay Area, hybrid</sub> | 0d |
-| ↳ |  |  | Senior Data Engineer<br><sub>Full-time · Data</sub> | San Francisco, CA | [Apply](https://www.ycombinator.com/companies/metriport/jobs/wGKe03x-senior-data-engineer)<br><sub>Asks for 6+ years of experience; $180K–$220K; SF Bay Area, hybrid</sub> | 0d |
-| ↳ |  |  | Senior Implementation Engineer<br><sub>Full-time · SWE</sub> | San Francisco, CA | [Apply](https://www.ycombinator.com/companies/metriport/jobs/YR0nrlN-senior-implementation-engineer)<br><sub>Asks for 6+ years of experience; $160K–$190K; SF Bay Area, hybrid</sub> | 0d |
-| ↳ |  |  | Senior Software Engineer<br><sub>Full-time · SWE</sub> | San Francisco, CA | [Apply](https://www.ycombinator.com/companies/metriport/jobs/Evxfl0l-senior-software-engineer)<br><sub>Asks for 6+ years of experience; $180K–$220K; SF Bay Area, hybrid</sub> | 0d |
-| ↳ |  |  | Senior Software Engineer, Internal Tools<br><sub>Full-time · SWE</sub> | San Francisco, CA | [Apply](https://www.ycombinator.com/companies/metriport/jobs/UG7xIZs-senior-software-engineer-internal-tools)<br><sub>Asks for 3+ years of experience; $120K–$160K; SF Bay Area, hybrid</sub> | 0d |
-| ↳ |  |  | Staff Data Engineer<br><sub>Full-time · Data</sub> | San Francisco, CA | [Apply](https://www.ycombinator.com/companies/metriport/jobs/mnzHloS-staff-data-engineer)<br><sub>Asks for 6+ years of experience; $200K–$260K; SF Bay Area, hybrid</sub> | 0d |
-| ↳ |  |  | Staff Software Engineer<br><sub>Full-time · SWE</sub> | San Francisco, CA | [Apply](https://www.ycombinator.com/companies/metriport/jobs/Id565m1-staff-software-engineer)<br><sub>Asks for 6+ years of experience; $200K–$260K; SF Bay Area, hybrid</sub> | 0d |
-| ↳ |  |  | Strategic Projects Lead<br><sub>Full-time · Ops/BizOps</sub> | San Francisco, CA | [Apply](https://www.ycombinator.com/companies/metriport/jobs/jV2UFTN-strategic-projects-lead)<br><sub>Asks for 3+ years of experience; $140K–$160K; SF Bay Area, hybrid</sub> | 0d |
-| ↳ |  |  | Technical Account Manager<br><sub>Full-time · Other</sub> | San Francisco, CA | [Apply](https://www.ycombinator.com/companies/metriport/jobs/IcQpKRB-technical-account-manager)<br><sub>Asks for 3+ years of experience; $160K–$190K; SF Bay Area, hybrid</sub> | 0d |
-| ↳ |  |  | Technical Recruiter<br><sub>Full-time · Ops/BizOps</sub> | San Francisco, CA | [Apply](https://www.ycombinator.com/companies/metriport/jobs/9PTzUvR-technical-recruiter)<br><sub>Asks for 3+ years of experience; $120K–$160K; SF Bay Area, hybrid</sub> | 0d |
+| **[Aviator](https://www.aviator.co)**<br><sub>YC S21</sub> | Engineering productivity tools: merge queues, code review routing, and workflow automation | — | Software Engineering Intern<br><sub>SWE</sub> | San Francisco, CA | [Apply](https://www.ycombinator.com/companies/aviator/jobs/aaMaqQu-software-engineering-intern)<br><sub>Backend, Python; juniors and above; $5K–$8K; US work authorization required</sub> | 0d |
+| **[Beyond Reach Labs](https://www.beyondreachlabs.com)**<br><sub>YC W26</sub> | Space solar arrays that grow to the size of a football field in orbit | — | Mechanical Engineer Intern<br><sub>Summer 2027 · Hardware</sub> | New York, NY | [Apply](https://www.workatastartup.com/jobs/109213)<br><sub>Sophomores and above; $28/hr</sub> | 0d |
+| **[Dispatch](https://dispatch.space)**<br><sub>YC P26</sub> | Satellites for manufacturing in space | — | Electrical Engineering Intern<br><sub>Hardware</sub> | San Francisco, CA | [Apply](https://www.workatastartup.com/jobs/110104)<br><sub>$30/hr; any experience level</sub> | 0d |
+| **[Yondu](https://yondu.ai)**<br><sub>YC W24</sub> | Robots to automate fulfillment | — | Robotics Software Intern<br><sub>Fall 2026 · SWE</sub> | Gardena, CA; Los Angeles, CA | [Apply](https://www.workatastartup.com/jobs/95223)<br><sub>Freshmen and above; $4K–$10K/month</sub> | 0d |
 
 [Back to top](#startup-internships--new-grad-roles)

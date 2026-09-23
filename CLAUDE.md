@@ -33,7 +33,7 @@ make render    # regenerate README.md
 - `src/startup_jobs/validate.py`: cross-file checks (filename, duplicates, dates, email warnings)
 - `src/startup_jobs/render.py`: README generation (featured first, intern/new-grad tables, stale/closed collapsed)
 - `src/startup_jobs/issue_form.py`: issue-form body → YAML change
-- `.github/workflows/`: `validate.yml` (PR CI), `render-readme.yml` (main + weekly), `issue-to-pr.yml` (`approved` label)
+- `.github/workflows/`: `validate.yml` (PR CI), `render-readme.yml` (main + daily), `issue-to-pr.yml` (`approved` label)
 
 ## GitHub setup
 

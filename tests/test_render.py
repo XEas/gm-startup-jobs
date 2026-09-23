@@ -1,6 +1,8 @@
 import re
 from datetime import date
 
+import pytest
+
 from conftest import REPO, SAMPLE_DATA, TODAY, email_role, role, startup
 from startup_jobs.cli import main
 from startup_jobs.models import Startup
@@ -29,13 +31,20 @@ def test_notice_header_footer():
 
 def test_table_columns_and_row():
     out = render_readme([S(remote_ok=True, affiliations=["Demo Fund"])], TODAY)
-    assert "| Company | What they do | Stage | Role | Location | Apply | Confirmed |" in out
+    assert "| Company | What they do | Stage | Role | Location | Apply | Age |" in out
     row = next(line for line in out.splitlines() if line.startswith("| **[Widget Co]"))
     assert "[Widget Co](https://widgetco.example.com)" in row
     assert "Demo Fund" in row and "| Seed |" in row
     assert "Austin, TX (remote ok)" in row
     assert "[Apply](https://jobs.example.com/widgetco/swe-intern)" in row
-    assert "| 2026-09-01 |" in row
+    assert row.endswith("| 21d |")  # confirmed 2026-09-01, today 2026-09-22
+
+
+@pytest.mark.parametrize("confirmed,expected", [(date(2026, 9, 22), "0d"), (date(2026, 9, 21), "1d"), (date(2026, 7, 24), "60d")])
+def test_age_column(confirmed, expected):
+    row = next(line for line in render_readme([S(roles=[role(confirmed=confirmed)])], TODAY).splitlines()
+               if "jobs.example.com/" in line)
+    assert row.endswith(f"| {expected} |")
 
 
 def test_repeated_company_rows_collapse():

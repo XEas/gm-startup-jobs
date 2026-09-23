@@ -12,7 +12,7 @@ on:
       - "src/**"
       - "pyproject.toml"
   schedule:
-    - cron: "17 13 * * 1" # weekly, so roles past 60 days move to the stale section
+    - cron: "5 0 * * *" # daily just after midnight UTC, so the Age column and stale section stay current
   workflow_dispatch:
 
 permissions:

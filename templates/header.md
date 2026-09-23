@@ -7,7 +7,7 @@ A curated list of internship and new-grad roles at early-stage startups, with th
 ## For applicants
 
 - **Layout:** featured startups come first, then all others A–Z. Internships and new-grad roles are in separate tables.
-- **Confirmed** is the date a role was last checked as open. Closed roles, and roles not confirmed in 60 days, move to *Possibly stale / closed* at the bottom.
+- **Age** is the number of days since a role was last confirmed open (0d = today). Closed roles, and roles not confirmed in 60 days, move to *Possibly stale / closed* at the bottom.
 - **Apply** opens the company's application page or form. **Email** means the company takes applications by email; see [applying by email](#applying-by-email).
 - **Something wrong?** [Report a closed role](../../issues/new?template=close-role.yml) or [suggest an update](../../issues/new?template=update-role.yml).
 

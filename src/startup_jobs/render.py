@@ -24,7 +24,7 @@ STAGE_LABELS = {
     "unknown": "—",
 }
 LEVEL_SECTIONS = (("intern", "Internships"), ("new-grad", "New Grad"))
-COLUMNS = ("Company", "What they do", "Stage", "Role", "Location", "Apply", "Confirmed")
+COLUMNS = ("Company", "What they do", "Stage", "Role", "Location", "Apply", "Age")
 
 
 def cell(text: str) -> str:
@@ -71,7 +71,12 @@ def apply_cell(r: Role) -> str:
     return out
 
 
-def row(s: Startup, r: Role, repeat: bool = False) -> str:
+def age(r: Role, today: date) -> str:
+    """Whole days since the role was last confirmed open: today is 0d, yesterday 1d."""
+    return f"{(today - r.confirmed).days}d"
+
+
+def row(s: Startup, r: Role, today: date, repeat: bool = False) -> str:
     """One table row. `repeat` rows continue the previous company, so its details aren't shown again."""
     cells = (
         "↳" if repeat else company_cell(s),
@@ -80,16 +85,16 @@ def row(s: Startup, r: Role, repeat: bool = False) -> str:
         role_cell(r),
         location_cell(s),
         apply_cell(r),
-        r.confirmed.isoformat(),
+        age(r, today),
     )
     return "| " + " | ".join(cells) + " |"
 
 
-def table(pairs: Iterable[tuple[Startup, Role]]) -> list[str]:
+def table(pairs: Iterable[tuple[Startup, Role]], today: date) -> list[str]:
     lines = ["| " + " | ".join(COLUMNS) + " |", "|" + "---|" * len(COLUMNS)]
     prev = None
     for s, r in pairs:
-        lines.append(row(s, r, repeat=s is prev))
+        lines.append(row(s, r, today, repeat=s is prev))
         prev = s
     return lines
 
@@ -126,7 +131,7 @@ def render_readme(startups: Iterable[Startup], today: date, header: str = "", fo
         for level, level_title in LEVEL_SECTIONS:
             subset = sorted((p for p in pairs if p[1].level == level), key=_sort_key)
             if subset:
-                out += [f"#### {level_title}", ""] + table(subset) + [""]
+                out += [f"#### {level_title}", ""] + table(subset, today) + [""]
 
     if not active:
         out += ["_No open roles right now. Check back soon._", ""]
@@ -142,7 +147,7 @@ def render_readme(startups: Iterable[Startup], today: date, header: str = "", fo
             f"confirmed in the last {STALE_AFTER_DAYS} days. They may still be open; check before applying.</summary>",
             "",
         ]
-        out += table(sorted(inactive, key=_sort_key))
+        out += table(sorted(inactive, key=_sort_key), today)
         out += ["", "</details>", ""]
 
     if footer:

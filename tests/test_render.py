@@ -1,7 +1,7 @@
 import re
 from datetime import date
 
-from conftest import REPO, TODAY, email_role, role, startup
+from conftest import REPO, SAMPLE_DATA, TODAY, email_role, role, startup
 from startup_jobs.cli import main
 from startup_jobs.models import Startup
 from startup_jobs.render import GENERATED_NOTICE, cell, render_readme
@@ -36,6 +36,13 @@ def test_table_columns_and_row():
     assert "Austin, TX (remote ok)" in row
     assert "[Apply](https://jobs.example.com/widgetco/swe-intern)" in row
     assert "| 2026-09-01 |" in row
+
+
+def test_repeated_company_rows_collapse():
+    s = S(roles=[role(title="A", url="https://jobs.example.com/a"), role(title="B", url="https://jobs.example.com/b")])
+    rows = [line for line in render_readme([s], TODAY).splitlines() if "jobs.example.com/" in line]
+    assert rows[0].startswith("| **[Widget Co]")
+    assert rows[1].startswith("| ↳ |  |  | B<br>")
 
 
 def test_email_role_uses_mailto():
@@ -116,7 +123,7 @@ def test_deterministic():
 def test_cli_render_and_check(tmp_path, monkeypatch):
     monkeypatch.chdir(REPO)
     out = tmp_path / "README.md"
-    args = ["--today", "2026-09-22"]
+    args = ["--today", "2026-09-22", "--data-dir", str(SAMPLE_DATA)]
     assert main(args + ["render", "--output", str(out)]) == 0
     assert main(args + ["check-readme", "--output", str(out)]) == 0
     out.write_text(out.read_text() + "hand edit\n")

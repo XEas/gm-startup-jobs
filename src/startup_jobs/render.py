@@ -71,11 +71,12 @@ def apply_cell(r: Role) -> str:
     return out
 
 
-def row(s: Startup, r: Role) -> str:
+def row(s: Startup, r: Role, repeat: bool = False) -> str:
+    """One table row. `repeat` rows continue the previous company, so its details aren't shown again."""
     cells = (
-        company_cell(s),
-        what_cell(s),
-        STAGE_LABELS[s.stage],
+        "↳" if repeat else company_cell(s),
+        "" if repeat else what_cell(s),
+        "" if repeat else STAGE_LABELS[s.stage],
         role_cell(r),
         location_cell(s),
         apply_cell(r),
@@ -86,7 +87,10 @@ def row(s: Startup, r: Role) -> str:
 
 def table(pairs: Iterable[tuple[Startup, Role]]) -> list[str]:
     lines = ["| " + " | ".join(COLUMNS) + " |", "|" + "---|" * len(COLUMNS)]
-    lines += [row(s, r) for s, r in pairs]
+    prev = None
+    for s, r in pairs:
+        lines.append(row(s, r, repeat=s is prev))
+        prev = s
     return lines
 
 

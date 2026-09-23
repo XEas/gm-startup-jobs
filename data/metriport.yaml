@@ -1,0 +1,131 @@
+name: Metriport
+website: https://www.metriport.com
+one_liner: Healthcare data infrastructure for next generation care delivery
+stage: unknown
+headcount: 11-50
+locations:
+  - San Francisco, CA
+remote_ok: false
+affiliations:
+  - YC S22
+roles:
+  - title: Senior Software Engineer
+    level: new-grad
+    category: SWE
+    term: Full-time
+    apply_method: ats
+    url: https://www.ycombinator.com/companies/metriport/jobs/Evxfl0l-senior-software-engineer
+    confirmed: 2026-09-23
+    apply_tips: Asks for 6+ years of experience; $180K–$220K; SF Bay Area, hybrid
+  - title: Staff Software Engineer
+    level: new-grad
+    category: SWE
+    term: Full-time
+    apply_method: ats
+    url: https://www.ycombinator.com/companies/metriport/jobs/Id565m1-staff-software-engineer
+    confirmed: 2026-09-23
+    apply_tips: Asks for 6+ years of experience; $200K–$260K; SF Bay Area, hybrid
+  - title: Senior Software Engineer, Internal Tools
+    level: new-grad
+    category: SWE
+    term: Full-time
+    apply_method: ats
+    url: https://www.ycombinator.com/companies/metriport/jobs/UG7xIZs-senior-software-engineer-internal-tools
+    confirmed: 2026-09-23
+    apply_tips: Asks for 3+ years of experience; $120K–$160K; SF Bay Area, hybrid
+  - title: Senior Implementation Engineer
+    level: new-grad
+    category: SWE
+    term: Full-time
+    apply_method: ats
+    url: https://www.ycombinator.com/companies/metriport/jobs/YR0nrlN-senior-implementation-engineer
+    confirmed: 2026-09-23
+    apply_tips: Asks for 6+ years of experience; $160K–$190K; SF Bay Area, hybrid
+  - title: Staff Data Engineer
+    level: new-grad
+    category: Data
+    term: Full-time
+    apply_method: ats
+    url: https://www.ycombinator.com/companies/metriport/jobs/mnzHloS-staff-data-engineer
+    confirmed: 2026-09-23
+    apply_tips: Asks for 6+ years of experience; $200K–$260K; SF Bay Area, hybrid
+  - title: Senior Data Engineer
+    level: new-grad
+    category: Data
+    term: Full-time
+    apply_method: ats
+    url: https://www.ycombinator.com/companies/metriport/jobs/wGKe03x-senior-data-engineer
+    confirmed: 2026-09-23
+    apply_tips: Asks for 6+ years of experience; $180K–$220K; SF Bay Area, hybrid
+  - title: Product Design
+    level: new-grad
+    category: Design
+    term: Full-time
+    apply_method: ats
+    url: https://www.ycombinator.com/companies/metriport/jobs/wV6tPZ2-product-design
+    confirmed: 2026-09-23
+    apply_tips: Asks for 3+ years of experience; $140K–$180K; SF Bay Area, hybrid
+  - title: Design Engineer
+    level: new-grad
+    category: Design
+    term: Full-time
+    apply_method: ats
+    url: https://www.ycombinator.com/companies/metriport/jobs/9RLuRon-design-engineer
+    confirmed: 2026-09-23
+    apply_tips: Asks for 3+ years of experience; $140K–$180K; SF Bay Area, hybrid
+  - title: Account Executive
+    level: new-grad
+    category: Growth/Marketing
+    term: Full-time
+    apply_method: ats
+    url: https://www.ycombinator.com/companies/metriport/jobs/pKiYGAg-account-executive
+    confirmed: 2026-09-23
+    apply_tips: Asks for 6+ years of experience; $200K–$275K; SF Bay Area, hybrid
+  - title: Partnerships Lead
+    level: new-grad
+    category: Growth/Marketing
+    term: Full-time
+    apply_method: ats
+    url: https://www.ycombinator.com/companies/metriport/jobs/FJO2xX7-partnerships-lead
+    confirmed: 2026-09-23
+    apply_tips: Asks for 3+ years of experience; $140K–$160K; SF Bay Area, hybrid
+  - title: Technical Account Manager
+    level: new-grad
+    category: Other
+    term: Full-time
+    apply_method: ats
+    url: https://www.ycombinator.com/companies/metriport/jobs/IcQpKRB-technical-account-manager
+    confirmed: 2026-09-23
+    apply_tips: Asks for 3+ years of experience; $160K–$190K; SF Bay Area, hybrid
+  - title: Head of Customer Success
+    level: new-grad
+    category: Ops/BizOps
+    term: Full-time
+    apply_method: ats
+    url: https://www.ycombinator.com/companies/metriport/jobs/va3Pgyc-head-of-customer-success
+    confirmed: 2026-09-23
+    apply_tips: Asks for 6+ years of experience; $190K–$250K; SF Bay Area, hybrid
+  - title: Strategic Projects Lead
+    level: new-grad
+    category: Ops/BizOps
+    term: Full-time
+    apply_method: ats
+    url: https://www.ycombinator.com/companies/metriport/jobs/jV2UFTN-strategic-projects-lead
+    confirmed: 2026-09-23
+    apply_tips: Asks for 3+ years of experience; $140K–$160K; SF Bay Area, hybrid
+  - title: Technical Recruiter
+    level: new-grad
+    category: Ops/BizOps
+    term: Full-time
+    apply_method: ats
+    url: https://www.ycombinator.com/companies/metriport/jobs/9PTzUvR-technical-recruiter
+    confirmed: 2026-09-23
+    apply_tips: Asks for 3+ years of experience; $120K–$160K; SF Bay Area, hybrid
+  - title: Office Manager/Executive Assistant
+    level: new-grad
+    category: Ops/BizOps
+    term: Full-time
+    apply_method: ats
+    url: https://www.ycombinator.com/companies/metriport/jobs/CI0gWvW-office-manager-executive-assistant
+    confirmed: 2026-09-23
+    apply_tips: Asks for 1+ years of experience; $35–$40/hr; SF Bay Area, hybrid

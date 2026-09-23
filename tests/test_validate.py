@@ -1,4 +1,4 @@
-from datetime import date
+from datetime import date, datetime, timezone
 
 from conftest import REPO, SAMPLE_DATA, TODAY, email_role, role, startup, write
 from startup_jobs.cli import main
@@ -10,7 +10,9 @@ def messages(report, level="error"):
 
 
 def test_repo_data_is_valid():
-    report = validate_dir(REPO / "data", TODAY, root=REPO)
+    """The real listings, checked against the real current date."""
+    today = datetime.now(timezone.utc).date()
+    report = validate_dir(REPO / "data", today, root=REPO)
     assert report.ok, messages(report)
 
 

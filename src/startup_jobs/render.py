@@ -58,14 +58,14 @@ def location_cell(s: Startup) -> str:
 def what_cell(s: Startup) -> str:
     out = cell(s.one_liner)
     if s.notes:
-        out += f"<br><sub>💡 {cell(s.notes)}</sub>"
+        out += f"<br><sub>{cell(s.notes)}</sub>"
     return out
 
 
 def apply_cell(r: Role) -> str:
     if r.status == "closed":
         return "Closed"
-    out = link("📧 Email", r.apply_link) if r.apply_method == "email" else link("Apply", r.apply_link)
+    out = link("Email", r.apply_link) if r.apply_method == "email" else link("Apply", r.apply_link)
     if r.apply_tips:
         out += f"<br><sub>{cell(r.apply_tips)}</sub>"
     return out
@@ -113,7 +113,7 @@ def render_readme(startups: Iterable[Startup], today: date, header: str = "", fo
     out += [f"**{n_open} open role{'s' if n_open != 1 else ''} at {n_companies} "
             f"startup{'s' if n_companies != 1 else ''}.**", ""]
 
-    sections = (("⭐ Featured", [p for p in active if p[0].featured]), ("All startups", [p for p in active if not p[0].featured]))
+    sections = (("Featured", [p for p in active if p[0].featured]), ("All startups", [p for p in active if not p[0].featured]))
     for title, pairs in sections:
         if not pairs:
             continue

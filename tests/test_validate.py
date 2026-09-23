@@ -1,6 +1,6 @@
 from datetime import date
 
-from conftest import REPO, TODAY, email_role, role, startup, write
+from conftest import REPO, SAMPLE_DATA, TODAY, email_role, role, startup, write
 from startup_jobs.cli import main
 from startup_jobs.validate import validate_dir
 
@@ -12,7 +12,12 @@ def messages(report, level="error"):
 def test_repo_data_is_valid():
     report = validate_dir(REPO / "data", TODAY, root=REPO)
     assert report.ok, messages(report)
-    assert len(report.startups) >= 3
+
+
+def test_sample_data_is_valid():
+    report = validate_dir(SAMPLE_DATA, TODAY)
+    assert report.ok, messages(report)
+    assert len(report.startups) == 3
 
 
 def test_valid_file(data_dir):

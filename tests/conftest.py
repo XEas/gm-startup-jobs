@@ -7,6 +7,7 @@ import pytest
 import yaml
 
 REPO = Path(__file__).resolve().parent.parent
+SAMPLE_DATA = Path(__file__).resolve().parent / "fixtures" / "data"  # fictional startups
 TODAY = date(2026, 9, 22)
 
 

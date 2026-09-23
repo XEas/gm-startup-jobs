@@ -40,7 +40,7 @@ def test_table_columns_and_row():
 
 def test_email_role_uses_mailto():
     out = render_readme([S(roles=[email_role(apply_tips="Resume + 2 lines")])], TODAY)
-    assert "[📧 Email](mailto:jobs@widgetco.example.com)" in out
+    assert "[Email](mailto:jobs@widgetco.example.com)" in out
     assert "Resume + 2 lines" in out
 
 
@@ -50,9 +50,9 @@ def test_featured_first_then_alphabetical():
     beta = S(name="beta", website="https://beta.example.com", roles=[role(url="https://jobs.example.com/b")])
     alpha = S(name="Alpha", website="https://alpha.example.com", roles=[role(url="https://jobs.example.com/a")])
     out = render_readme([beta, zeta, alpha], TODAY)
-    assert out.index("## ⭐ Featured") < out.index("## All startups")
+    assert out.index("## Featured") < out.index("## All startups")
     assert out.index("[Zeta]") < out.index("[Alpha]") < out.index("[beta]")
-    assert "[Zeta]" in section(out, "## ⭐ Featured")
+    assert "[Zeta]" in section(out, "## Featured")
     assert "[Zeta]" not in section(out, "## All startups")
 
 
@@ -86,6 +86,11 @@ def test_no_details_when_everything_fresh():
 def test_startup_without_roles_listed_as_tracking():
     out = render_readme([S(roles=[])], TODAY)
     assert "Also tracking" in out and "No open roles" in out
+
+
+def test_empty_data_renders():
+    out = render_readme([], TODAY)
+    assert "0 open roles at 0 startups" in out and "No open roles" in out
 
 
 def test_notes_rendered():

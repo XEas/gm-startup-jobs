@@ -5,7 +5,7 @@ from pathlib import Path
 import pytest
 import yaml
 
-from conftest import REPO, TODAY
+from conftest import REPO, SAMPLE_DATA, TODAY
 from startup_jobs import issue_form as f
 from startup_jobs.cli import main
 from startup_jobs.issue_form import IssueFormError, apply_issue, parse_sections
@@ -21,9 +21,9 @@ def body(name: str) -> str:
 
 @pytest.fixture
 def repo_data(tmp_path: Path) -> Path:
-    """A copy of the real data/ directory to apply issues to."""
+    """A copy of the sample data directory to apply issues to."""
     d = tmp_path / "data"
-    shutil.copytree(REPO / "data", d)
+    shutil.copytree(SAMPLE_DATA, d)
     return d
 
 

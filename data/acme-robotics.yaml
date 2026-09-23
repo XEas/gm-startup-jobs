@@ -1,0 +1,34 @@
+# EXAMPLE ENTRY: a fictional startup used to demonstrate the format.
+name: Acme Robotics
+website: https://acmerobotics.example.com
+one_liner: Autonomous forklifts for mid-size warehouses
+stage: series-a
+headcount: 51-200
+locations:
+  - Pittsburgh, PA
+remote_ok: false
+affiliations:
+  - Example Accelerator W25
+roles:
+  - title: Software Engineering Intern, Autonomy
+    level: intern
+    category: SWE
+    term: Summer 2027
+    apply_method: ats
+    url: https://jobs.ashbyhq.example.com/acme-robotics/swe-intern-autonomy
+    confirmed: 2026-09-15
+  - title: Hardware Engineering Intern
+    level: intern
+    category: Hardware
+    term: Summer 2027
+    apply_method: ats
+    url: https://boards.greenhouse.example.com/acmerobotics/hw-intern
+    confirmed: 2026-09-10
+    apply_tips: Mention robotics projects you've built
+  - title: Controls Engineer, New Grad
+    level: new-grad
+    category: Hardware
+    term: Full-time 2027
+    apply_method: ats
+    url: https://boards.greenhouse.example.com/acmerobotics/controls-new-grad
+    confirmed: 2026-06-01

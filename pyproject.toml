@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "startup-jobs"
+version = "0.1.0"
+description = "Validate and render a curated list of startup internship and new-grad roles."
+readme = "CONTRIBUTING.md"
+requires-python = ">=3.10"
+dependencies = [
+  "pydantic>=2.5,<3",
+  "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+startup-jobs = "startup_jobs.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

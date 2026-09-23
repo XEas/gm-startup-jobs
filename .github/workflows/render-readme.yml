@@ -1,0 +1,52 @@
+name: render-readme
+
+# Regenerates README.md from data/ and commits it to main.
+# Loop guards: README.md is not in `paths`; the bot commit says [skip ci];
+# pushes made with GITHUB_TOKEN never trigger workflows; bot-actor runs are skipped.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/**"
+      - "templates/**"
+      - "src/**"
+      - "pyproject.toml"
+  schedule:
+    - cron: "17 13 * * 1" # weekly, so roles past 60 days move to the stale section
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: render-readme
+  cancel-in-progress: false
+
+jobs:
+  render:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          # Use BOT_TOKEN if branch protection blocks the default token from pushing to main.
+          token: ${{ secrets.BOT_TOKEN || github.token }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -e .
+      - name: Render README
+        run: python -m startup_jobs render
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "README.md unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: regenerate README [skip ci]"
+          git push origin HEAD:main

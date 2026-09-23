@@ -1,0 +1,103 @@
+name: Update a role
+description: Re-confirm a role is still open, or change its details.
+title: "Update: <startup> – <role>"
+labels: ["update-role"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        First identify the role **exactly as it's listed now**. Then fill in only what changed. Empty fields stay as they are.
+        Submitting with nothing changed simply re-confirms that the role is still open.
+  - type: input
+    id: name
+    attributes:
+      label: Startup name
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: Role title
+      description: The current title as shown in the list.
+    validations:
+      required: true
+  - type: dropdown
+    id: level
+    attributes:
+      label: Level
+      options:
+        - Internship
+        - New grad
+    validations:
+      required: true
+  - type: input
+    id: term
+    attributes:
+      label: Term
+      description: The current term as shown in the list. Leave empty if none is shown, or if only one role has this title.
+  - type: markdown
+    attributes:
+      value: "## What changed"
+  - type: input
+    id: new_title
+    attributes:
+      label: New role title
+  - type: dropdown
+    id: new_category
+    attributes:
+      label: New category
+      options:
+        - SWE
+        - ML/AI
+        - Data
+        - Product
+        - Design
+        - Hardware
+        - Growth/Marketing
+        - Ops/BizOps
+        - Other
+  - type: input
+    id: new_term
+    attributes:
+      label: New term
+  - type: dropdown
+    id: new_apply_method
+    attributes:
+      label: New way to apply
+      options:
+        - ATS or careers page link
+        - Email
+        - Application form link
+  - type: input
+    id: new_url
+    attributes:
+      label: New application URL
+  - type: input
+    id: new_contact
+    attributes:
+      label: New contact email
+      description: Please use a role address like jobs@ rather than a personal one.
+  - type: checkboxes
+    id: contact_consent
+    attributes:
+      label: Email consent
+      description: Required if you set a new contact email or switch to email applications.
+      options:
+        - label: The startup approved publishing this email address
+  - type: textarea
+    id: new_apply_tips
+    attributes:
+      label: New apply tips
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      options:
+        - No change
+        - Open
+        - Closed
+  - type: input
+    id: confirmed
+    attributes:
+      label: Confirmed open on
+      description: YYYY-MM-DD. Leave empty to use the date the issue is approved.

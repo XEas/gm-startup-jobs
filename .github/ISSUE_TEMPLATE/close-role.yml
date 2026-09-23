@@ -1,0 +1,39 @@
+name: Mark role closed
+description: Tell us a role is no longer accepting applications.
+title: "Closed: <startup> – <role>"
+labels: ["close-role"]
+body:
+  - type: markdown
+    attributes:
+      value: Identify the role **exactly as it's listed now**.
+  - type: input
+    id: name
+    attributes:
+      label: Startup name
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: Role title
+    validations:
+      required: true
+  - type: dropdown
+    id: level
+    attributes:
+      label: Level
+      options:
+        - Internship
+        - New grad
+    validations:
+      required: true
+  - type: input
+    id: term
+    attributes:
+      label: Term
+      description: Leave empty if none is shown, or if only one role has this title.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: How do you know?
+      description: Optional, e.g. "posting removed" or "the recruiter told me". This helps the reviewer; it isn't published.

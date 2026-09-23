@@ -1,0 +1,147 @@
+name: Add a startup / role
+description: List a startup and one open internship or new-grad role. Startups can use this to list themselves.
+title: "Add: <startup> – <role>"
+labels: ["add-startup"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing! Fill in **one role per issue**. A maintainer reviews it, and a bot then opens a pull request.
+        **If the startup is already listed**, only the startup name and the role fields are needed. Any startup fields you fill in will update the listing.
+  - type: input
+    id: name
+    attributes:
+      label: Startup name
+      placeholder: Acme Robotics
+    validations:
+      required: true
+  - type: input
+    id: website
+    attributes:
+      label: Website
+      description: Required for new startups.
+      placeholder: https://acmerobotics.com
+  - type: input
+    id: one_liner
+    attributes:
+      label: One-liner
+      description: What they build, in 120 characters or fewer. Required for new startups.
+      placeholder: Autonomous forklifts for mid-size warehouses
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Stage
+      description: Required for new startups.
+      options:
+        - pre-seed
+        - seed
+        - series-a
+        - series-b
+        - series-c+
+        - bootstrapped
+        - unknown
+  - type: dropdown
+    id: headcount
+    attributes:
+      label: Headcount
+      options:
+        - 1-10
+        - 11-50
+        - 51-200
+        - 201-500
+        - 501+
+  - type: textarea
+    id: locations
+    attributes:
+      label: Locations
+      description: One per line, e.g. "San Francisco, CA" or "Remote". Required for new startups.
+      placeholder: |
+        San Francisco, CA
+        Remote
+  - type: dropdown
+    id: remote_ok
+    attributes:
+      label: Remote OK?
+      options:
+        - "Yes"
+        - "No"
+  - type: textarea
+    id: affiliations
+    attributes:
+      label: Affiliations
+      description: Optional. Accelerators or investors, one per line (e.g. "YC W25", "Techstars").
+  - type: markdown
+    attributes:
+      value: "## The role"
+  - type: input
+    id: title
+    attributes:
+      label: Role title
+      placeholder: Software Engineering Intern
+    validations:
+      required: true
+  - type: dropdown
+    id: level
+    attributes:
+      label: Level
+      options:
+        - Internship
+        - New grad
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - SWE
+        - ML/AI
+        - Data
+        - Product
+        - Design
+        - Hardware
+        - Growth/Marketing
+        - Ops/BizOps
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: term
+    attributes:
+      label: Term
+      placeholder: Summer 2027, Fall 2026, Full-time 2027, or Rolling
+  - type: dropdown
+    id: apply_method
+    attributes:
+      label: How to apply
+      description: Pick one. A link needs "Application URL"; email needs "Contact email" and the consent box.
+      options:
+        - ATS or careers page link
+        - Email
+        - Application form link
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Application URL
+      description: The Greenhouse/Lever/Ashby/careers page or application form link. Leave empty for email.
+      placeholder: https://jobs.ashbyhq.com/acme/...
+  - type: input
+    id: contact
+    attributes:
+      label: Contact email
+      description: Only for email applications. Please use a role address like jobs@ or careers@ rather than a personal one.
+      placeholder: jobs@acmerobotics.com
+  - type: checkboxes
+    id: contact_consent
+    attributes:
+      label: Email consent
+      description: Required for email applications. We never publish an address the startup hasn't approved.
+      options:
+        - label: The startup approved publishing this email address
+  - type: textarea
+    id: apply_tips
+    attributes:
+      label: Apply tips
+      description: Optional. Short guidance for applicants, e.g. "Send resume + 2 lines on why".

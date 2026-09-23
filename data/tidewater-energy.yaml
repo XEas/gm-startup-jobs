@@ -1,0 +1,29 @@
+# EXAMPLE ENTRY: a fictional startup used to demonstrate the format.
+name: Tidewater Energy
+website: https://tidewater.example.com
+one_liner: Modular tidal turbines for coastal microgrids
+stage: pre-seed
+headcount: 11-50
+locations:
+  - Boston, MA
+  - Remote
+remote_ok: true
+affiliations:
+  - Example Climate Fund
+featured: true
+roles:
+  - title: Data Analyst Intern
+    level: intern
+    category: Data
+    term: Summer 2027
+    apply_method: form
+    url: https://forms.example.com/tidewater-data-intern
+    confirmed: 2026-09-18
+  - title: Business Operations Associate
+    level: new-grad
+    category: Ops/BizOps
+    term: Full-time 2027
+    apply_method: form
+    url: https://forms.example.com/tidewater-bizops
+    confirmed: 2026-09-18
+    apply_tips: One-page resume; mention why climate

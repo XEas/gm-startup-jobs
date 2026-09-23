@@ -1,0 +1,37 @@
+# EXAMPLE ENTRY: a fictional startup used to demonstrate the format.
+name: Quillstack
+website: https://quillstack.example.com
+one_liner: AI copilot that drafts and checks legal contracts for small businesses
+stage: seed
+headcount: 1-10
+locations:
+  - New York, NY
+remote_ok: true
+notes: Founders reply to every email within a week.
+roles:
+  - title: ML Engineering Intern
+    level: intern
+    category: ML/AI
+    term: Summer 2027
+    apply_method: email
+    contact: jobs@quillstack.example.com
+    contact_consent: true
+    confirmed: 2026-09-20
+    apply_tips: Send your resume plus two lines on a model you trained and what surprised you
+  - title: Founding Engineer, New Grad
+    level: new-grad
+    category: SWE
+    term: Rolling
+    apply_method: email
+    contact: jobs@quillstack.example.com
+    contact_consent: true
+    confirmed: 2026-09-20
+  - title: Growth Intern
+    level: intern
+    category: Growth/Marketing
+    term: Fall 2026
+    apply_method: email
+    contact: jobs@quillstack.example.com
+    contact_consent: true
+    confirmed: 2026-08-01
+    status: closed

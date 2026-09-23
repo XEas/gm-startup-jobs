@@ -1,30 +1,19 @@
 # Startup Internships & New Grad Roles
 
-A curated list of internship and new-grad roles at early-stage startups. Each role shows the date it was last confirmed open.
+A curated list of internship and new-grad roles at early-stage startups, with the date each role was last confirmed open.
 
-Roles are grouped into Featured and All startups, with separate tables for internships and new-grad positions. Roles that are closed or haven't been confirmed in 60 days are moved to a collapsed section at the bottom.
+[Open roles](#open-roles) · [For applicants](#for-applicants) · [For companies](#for-companies) · [Contributing](#contributing)
 
-## Contributing
+## For applicants
 
-- **Issue forms:** [add a startup or role](../../issues/new?template=add-startup-role.yml), [update a role](../../issues/new?template=update-role.yml), or [mark a role closed](../../issues/new?template=close-role.yml). Once a maintainer approves the issue, it's turned into a pull request automatically.
-- **Pull request:** edit or add a file in [`data/`](data/). See [CONTRIBUTING.md](CONTRIBUTING.md).
+- **Layout:** featured startups come first, then all others A–Z. Internships and new-grad roles are in separate tables.
+- **Confirmed** is the date a role was last checked as open. Closed roles, and roles not confirmed in 60 days, move to *Possibly stale / closed* at the bottom.
+- **Apply** opens the company's application page or form. **Email** means the company takes applications by email; see [applying by email](#applying-by-email).
+- **Something wrong?** [Report a closed role](../../issues/new?template=close-role.yml) or [suggest an update](../../issues/new?template=update-role.yml).
 
-This README is generated from `data/`, so please don't edit it directly.
+## For companies
 
-## For startups
-
-To list your company, fill out the [add a startup form](../../issues/new?template=add-startup-role.yml). If you take applications by email, give a role address such as `jobs@yourcompany.com` and confirm that it can be published. We only publish email addresses a startup has approved. Contact: `CONTACT_EMAIL_PLACEHOLDER`.
-
-## Applying by email
-
-Some startups on this list take applications by email. Keep it short:
-
-1. **Subject:** role name and your name.
-2. **First line:** who you are and which role you're applying for.
-3. **Next two lines:** one or two relevant things you've built or worked on, with links.
-4. **Last line:** your availability (term, dates, location).
-5. Attach a one-page PDF resume.
-6. Follow any apply tips listed with the role.
-7. If you don't hear back, one follow-up after about a week is fine.
-
----
+- **Get listed:** [add your startup and roles](../../issues/new?template=add-startup-role.yml). Each submission is reviewed before it's published.
+- **Keep listings current:** [update a role](../../issues/new?template=update-role.yml) or [mark it closed](../../issues/new?template=close-role.yml).
+- **Email applications:** use a role address such as `jobs@yourcompany.com` and confirm it can be published. We never publish an address without your approval.
+- **Questions:** `CONTACT_EMAIL_PLACEHOLDER`

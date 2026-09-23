@@ -114,6 +114,7 @@ def render_readme(startups: Iterable[Startup], today: date, header: str = "", fo
     out = [GENERATED_NOTICE, ""]
     if header:
         out += [header.strip(), ""]
+    out += ["## Open roles", ""]
     out += [f"**{n_open} open role{'s' if n_open != 1 else ''} at {n_companies} "
             f"startup{'s' if n_companies != 1 else ''}.**", ""]
 
@@ -121,11 +122,11 @@ def render_readme(startups: Iterable[Startup], today: date, header: str = "", fo
     for title, pairs in sections:
         if not pairs:
             continue
-        out += [f"## {title}", ""]
+        out += [f"### {title}", ""]
         for level, level_title in LEVEL_SECTIONS:
             subset = sorted((p for p in pairs if p[1].level == level), key=_sort_key)
             if subset:
-                out += [f"### {level_title}", ""] + table(subset) + [""]
+                out += [f"#### {level_title}", ""] + table(subset) + [""]
 
     if not active:
         out += ["_No open roles right now. Check back soon._", ""]

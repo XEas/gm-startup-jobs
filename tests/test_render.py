@@ -57,16 +57,16 @@ def test_featured_first_then_alphabetical():
     beta = S(name="beta", website="https://beta.example.com", roles=[role(url="https://jobs.example.com/b")])
     alpha = S(name="Alpha", website="https://alpha.example.com", roles=[role(url="https://jobs.example.com/a")])
     out = render_readme([beta, zeta, alpha], TODAY)
-    assert out.index("## Featured") < out.index("## All startups")
+    assert out.index("### Featured") < out.index("### All startups")
     assert out.index("[Zeta]") < out.index("[Alpha]") < out.index("[beta]")
-    assert "[Zeta]" in section(out, "## Featured")
-    assert "[Zeta]" not in section(out, "## All startups")
+    assert "[Zeta]" in section(out, "### Featured")
+    assert "[Zeta]" not in section(out, "### All startups")
 
 
 def test_interns_and_new_grads_split():
     s = S(roles=[role(), role(title="Founding Engineer", level="new-grad", url="https://jobs.example.com/ng")])
     out = render_readme([s], TODAY)
-    interns, new_grad = section(out, "### Internships"), section(out, "### New Grad")
+    interns, new_grad = section(out, "#### Internships"), section(out, "#### New Grad")
     assert "Software Engineering Intern" in interns and "Founding Engineer" not in interns
     assert "Founding Engineer" in new_grad
 

@@ -40,17 +40,20 @@ This README is generated from `data/`. Please don't edit it directly.
 
 ## Open roles
 
-**4 open roles at 4 startups.**
+**0 open roles at 0 startups.**
 
-### All startups
+_No open roles right now. Check back soon._
 
-#### Internships
+<details>
+<summary><b>Possibly stale / closed (4)</b>: closed roles, or roles not confirmed in the last 60 days. They may still be open; check before applying.</summary>
 
 | Company | What they do | Stage | Role | Location | Apply | Age |
 |---|---|---|---|---|---|---|
-| **[Aviator](https://www.aviator.co)**<br><sub>YC S21</sub> | Engineering productivity tools: merge queues, code review routing, and workflow automation | — | Software Engineering Intern<br><sub>SWE</sub> | San Francisco, CA | [Apply](https://www.ycombinator.com/companies/aviator/jobs/aaMaqQu-software-engineering-intern)<br><sub>Backend, Python; juniors and above; $5K–$8K; US work authorization required</sub> | 60d |
-| **[Beyond Reach Labs](https://www.beyondreachlabs.com)**<br><sub>YC W26</sub> | Space solar arrays that grow to the size of a football field in orbit | — | Mechanical Engineer Intern<br><sub>Summer 2027 · Hardware</sub> | New York, NY | [Apply](https://www.workatastartup.com/jobs/109213)<br><sub>Sophomores and above; $28/hr</sub> | 60d |
-| **[Dispatch](https://dispatch.space)**<br><sub>YC P26</sub> | Satellites for manufacturing in space | — | Electrical Engineering Intern<br><sub>Hardware</sub> | San Francisco, CA | [Apply](https://www.workatastartup.com/jobs/110104)<br><sub>$30/hr; any experience level</sub> | 60d |
-| **[Yondu](https://yondu.ai)**<br><sub>YC W24</sub> | Robots to automate fulfillment | — | Robotics Software Intern<br><sub>Fall 2026 · SWE</sub> | Gardena, CA; Los Angeles, CA | [Apply](https://www.workatastartup.com/jobs/95223)<br><sub>Freshmen and above; $4K–$10K/month</sub> | 60d |
+| **[Aviator](https://www.aviator.co)**<br><sub>YC S21</sub> | Engineering productivity tools: merge queues, code review routing, and workflow automation | — | Software Engineering Intern<br><sub>SWE</sub> | San Francisco, CA | [Apply](https://www.ycombinator.com/companies/aviator/jobs/aaMaqQu-software-engineering-intern)<br><sub>Backend, Python; juniors and above; $5K–$8K; US work authorization required</sub> | 61d |
+| **[Beyond Reach Labs](https://www.beyondreachlabs.com)**<br><sub>YC W26</sub> | Space solar arrays that grow to the size of a football field in orbit | — | Mechanical Engineer Intern<br><sub>Summer 2027 · Hardware</sub> | New York, NY | [Apply](https://www.workatastartup.com/jobs/109213)<br><sub>Sophomores and above; $28/hr</sub> | 61d |
+| **[Dispatch](https://dispatch.space)**<br><sub>YC P26</sub> | Satellites for manufacturing in space | — | Electrical Engineering Intern<br><sub>Hardware</sub> | San Francisco, CA | [Apply](https://www.workatastartup.com/jobs/110104)<br><sub>$30/hr; any experience level</sub> | 61d |
+| **[Yondu](https://yondu.ai)**<br><sub>YC W24</sub> | Robots to automate fulfillment | — | Robotics Software Intern<br><sub>Fall 2026 · SWE</sub> | Gardena, CA; Los Angeles, CA | [Apply](https://www.workatastartup.com/jobs/95223)<br><sub>Freshmen and above; $4K–$10K/month</sub> | 61d |
+
+</details>
 
 [Back to top](#startup-internships--new-grad-roles)
